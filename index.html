@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flight Booking</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+      .navbar {
+        background-color: rgb(171, 171, 183);
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        padding-top: 4px;
+        width: 200px;
+        justify-content: space-between;
+      }
+      li {
+        display: inline; /* since its block by default, its a vertical navbar */
+      }
+      a{
+        text-decoration: none;
+      }
+      .bg {
+        background-image: url("https://images.pexels.com/photos/358319/pexels-photo-358319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2://images.pexels.com/photos/348481/pexels-photo-348481.jpeg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .button-header {
+        position: absolute;
+        left: 36%;
+        top: 80%;
+      }
+      .button {
+        /* since this is an inline element, need to convert to block type to position it on screen */
+        display: block;
+        text-align: center;
+        position: fixed;
+        bottom: 20px;
+        background-color: rgb(171, 171, 183);
+        padding: 15px;
+        border-radius: 25px;
+        left: 45%;
+      }
+      
+    </style>
+  </head>
+
+  <body class="bg">
+    <nav class="navbar">
+        <div style="display: flex; justify-content: space-between">
+        <h2 style="display: inline">FlightBooker</h2>
+        <ul style="list-style-type: none;">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div style="text-align: center">
+      <h1><b>Welcome</b> to <i style="text-decoration: underline">FlightBooker!</i></h1>
+      
+      <!-- <img src="" alt="Flight image" height="400" width="90%"> -->
+      <p valign="bottom">
+        FlightBooker is the best place to book all your flights
+      </p>
+    </div>
+    <h4 class="button-header">Book your flights for the cheapest price now...</h4>
+    <a class="button" style="text-align: center" href="./booking.html" title="click here to book"
+      >Book now ▶▶</a
+    >
+  </body>
+</html>
